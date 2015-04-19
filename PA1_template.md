@@ -71,7 +71,7 @@ sum(!complete.cases(activity_data))
 ```
 ## [1] 2304
 ```
-Creating a new dataset with missing values filled in with the mean values......
+Creating a new dataset with missing values in the steps field, filled in with the mean values of the steps in each interval
 
 ```r
 new_data <- arrange(merge(activity_data, tmpdata1, by ="interval", all=TRUE), date)
@@ -131,3 +131,29 @@ print(plot)
 
                         
 
+=======
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
+
+
+## Loading and preprocessing the data
+
+
+
+## What is mean total number of steps taken per day?
+
+
+
+## What is the average daily activity pattern?
+
+
+
+## Imputing missing values
+
+
+
+## Are there differences in activity patterns between weekdays and weekends?
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270

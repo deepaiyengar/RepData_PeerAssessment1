@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "peer1_rr"
 author: "Deepa Iyengar"
 date: "Friday, April 17, 2015"
@@ -45,7 +44,7 @@ The number of rows with NA values is:
 ``` {r}
 sum(!complete.cases(activity_data))
 ```
-Creating a new dataset with missing values filled in with the mean values......
+Creating a new dataset with missing values in the steps field, filled in with the mean values of the steps in each interval
 ``` {r}
 new_data <- arrange(merge(activity_data, tmpdata1, by ="interval", all=TRUE), date)
 new_data$steps[is.na(new_data$steps)] <- new_data$avg[is.na(new_data$steps)]
